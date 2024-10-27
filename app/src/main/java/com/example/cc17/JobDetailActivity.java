@@ -16,9 +16,11 @@ public class JobDetailActivity extends AppCompatActivity {
         jobTitle = findViewById(R.id.jobTitle);
         jobDescription = findViewById(R.id.jobDescription);
 
+        // Get data from the intent
         String title = getIntent().getStringExtra("job_title");
         String description = getIntent().getStringExtra("job_description");
 
+        // Set the text fields
         jobTitle.setText(title);
         jobDescription.setText(description);
     }
