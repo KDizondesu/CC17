@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class RegisterActivity extends AppCompatActivity {
+public class Register extends AppCompatActivity {
 
     private EditText editTextUsername, editTextPassword;
     private Button buttonRegister;
@@ -29,10 +29,10 @@ public class RegisterActivity extends AppCompatActivity {
                 String password = editTextPassword.getText().toString();
 
                 if (!username.isEmpty() && !password.isEmpty()) {
-                    Toast.makeText(RegisterActivity.this, "Registered successfully!", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                    Toast.makeText(Register.this, "Registered successfully!", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(Register.this, Login.class));
                 } else {
-                    Toast.makeText(RegisterActivity.this, "Please fill in all fields!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register.this, "Please fill in all fields!", Toast.LENGTH_SHORT).show();
                 }
             }
         });

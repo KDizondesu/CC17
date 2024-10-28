@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class LoginActivity extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
     private EditText editTextUsername, editTextPassword;
     private Button buttonLogin, buttonRegister;
@@ -16,7 +16,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.login);
 
         editTextUsername = findViewById(R.id.editTextUsername);
         editTextPassword = findViewById(R.id.editTextPassword);
@@ -30,9 +30,9 @@ public class LoginActivity extends AppCompatActivity {
                 String password = editTextPassword.getText().toString();
 
                 if (username.equals("user") && password.equals("password")) {
-                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    startActivity(new Intent(Login.this, MainActivity.class));
                 } else {
-                    Toast.makeText(LoginActivity.this, "Invalid credentials!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Login.this, "Invalid credentials!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+                startActivity(new Intent(Login.this, Register.class));
             }
         });
     }
