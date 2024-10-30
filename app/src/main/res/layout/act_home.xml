@@ -18,36 +18,37 @@
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/ic_home"
+            android:src="@drawable/homee"
             android:contentDescription="Home"
             android:tint="@color/white"/>
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/ic_mail"
+            android:src="@drawable/mail"
             android:contentDescription="Mail"
             android:tint="@color/white"/>
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/ic_add"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:src="@drawable/add"
             android:contentDescription="Add"
             android:tint="@color/white" />
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/ic_profile"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:src="@drawable/blacknaulo"
             android:contentDescription="Profile"
             android:tint="@color/white"/>
     </LinearLayout>
+
 
     <!-- Search Bar -->
     <EditText
@@ -69,3 +70,4 @@
         android:layout_weight="1"
         android:padding="8dp" />
 </LinearLayout>
+

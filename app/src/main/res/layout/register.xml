@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/educ"
     android:gravity="center"
     android:padding="16dp"
     tools:context=".MainActivity">
@@ -23,7 +23,7 @@
             android:fontFamily="@font/ftg_regular"
             android:textAlignment="center"
             android:textSize="50dp"
-            android:textColor="#396f04"/>
+            android:textColor="@color/white"/>
 
         <ImageView
             android:layout_width="160dp"
@@ -34,12 +34,14 @@
             android:id="@+id/editTextUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:hint="Username"/>
 
         <EditText
             android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:hint="Password"
             android:inputType="textPassword"/>
 

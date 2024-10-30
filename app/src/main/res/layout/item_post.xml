@@ -1,93 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:background="@drawable/rounded_card"
-    android:layout_margin="8dp"
-    android:padding="12dp">
+    android:layout_height="match_parent"
+    android:background="@drawable/educ"
+    android:gravity="center"
+    android:padding="16dp">
 
-    <!-- Author Info -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/dark_green"
+        android:gravity="top"
         android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginBottom="8dp">
+        android:padding="8dp">
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/blacknaulo"
-            android:contentDescription="Avatar"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/circle_background"/>
-
+        <!-- Home Icon -->
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/authorName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Author Name"
-                android:textStyle="bold"
-                android:textColor="@color/black" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Home Icon"
+                android:src="@drawable/homee"
+                android:tint="@color/blue" />
 
             <TextView
-                android:id="@+id/followStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Following"
-                android:textSize="12sp"
-                android:textColor="@color/gray"/>
+                android:text="Home"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
         </LinearLayout>
 
-        <Button
-            android:id="@+id/buttonDiscussion"
-            android:layout_width="wrap_content"
+        <!-- Mail Icon -->
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Discussion"
-            android:background="@drawable/rounded_button"
-            android:textColor="@color/white"
-            android:layout_gravity="end"/>
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Mail Icon"
+                android:src="@drawable/mail"
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mail"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Add Icon -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Add Icon"
+                android:src="@drawable/add"
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Profile Icon -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Profile Icon"
+                android:src="@drawable/blacknaulo"
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
     </LinearLayout>
 
-    <!-- Post Title and Description -->
-    <TextView
-        android:id="@+id/postTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Post Title"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginBottom="4dp"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/square_rounded"
+            android:layout_margin="8dp"
+            android:padding="12dp">
 
-    <TextView
-        android:id="@+id/postDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Post Description"
-        android:textColor="@color/gray"
-        android:layout_marginBottom="8dp"/>
+    <!-- Author Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/blacknaulo"
+                android:contentDescription="Avatar"
+                android:layout_marginEnd="8dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/authorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Author Name"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/followStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Following"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Post Title and Description -->
+        <TextView
+            android:id="@+id/postTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Title"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/postDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Description"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="8dp"/>
 
     <!-- Post Image -->
-    <ImageView
-        android:id="@+id/postImage"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:src="@drawable/ic_placeholder_image"
-        android:contentDescription="Post Image"
-        android:layout_marginBottom="8dp"/>
+        <ImageView
+            android:id="@+id/postImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/placeholder"
+            android:contentDescription="Post Image"
+            android:layout_marginBottom="8dp"/>
 
     <!-- See More Link -->
-    <TextView
-        android:id="@+id/seeMore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="See more..."
-        android:textColor="@color/dark_green"
-        android:textStyle="italic"/>
-</LinearLayout>
+        <TextView
+            android:id="@+id/seeMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See more..."
+            android:textColor="@color/dark_green"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+</RelativeLayout>
